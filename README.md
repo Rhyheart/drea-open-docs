@@ -2,11 +2,11 @@
 
 ## 简介
 
-本项目为 [梦幻框架](http://drea.cc)机器人社区[开放文档](http://drea.cc/docs)，开发者们既可以为梦幻框架编写文档，也可以为您喜欢的应用编写文档。
+本项目为 [梦幻框架](http://drea.cc) 机器人社区 [开放文档](http://drea.cc/docs)，开发者们既可以为梦幻框架编写文档，也可以为您喜欢的应用编写文档。
 
 ## 云端修改
 
-对于非专业用户，进入[社区文档](http://drea.cc/docs)，找到你想要的编辑的页面，然后点击页面左下角`在 GitHub 上编辑此页`链接，直接在线编辑，保存后提PR即可！
+对于非专业用户，打开 [社区文档](http://drea.cc/docs)，找到你想要的编辑的页面，然后点击页面左下角`在 GitHub 上编辑此页`链接，直接在线编辑，保存后提PR即可！
 
 ## 本地修改
 
@@ -50,7 +50,7 @@ yarn dev
 
 - **编写文档**
 
-本文档项目基于[VuePress](https://v2.vuepress.vuejs.org/zh/)框架，以[Markdown](https://v2.vuepress.vuejs.org/zh/guide/markdown.html)作为编写规范。
+本文档项目基于 [VuePress](https://v2.vuepress.vuejs.org/zh/) 框架，以 [Markdown](https://v2.vuepress.vuejs.org/zh/guide/markdown.html) 作为编写规范。
 
 - **提交代码**
 
