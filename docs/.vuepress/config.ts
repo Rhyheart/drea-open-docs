@@ -74,7 +74,7 @@ export default defineUserConfig({
     logo: '/favicon.png',
     colorMode: 'dark',
     repo: 'Rhyheart/drea-open-docs',
-    docsBranch: 'dev',
+    docsBranch: 'main',
     docsDir: 'docs',
     editLink: true,
     locales: {
