@@ -2,7 +2,7 @@
 
 ## 简介
 
-本文档项目为 [梦幻社区](http://drea.cc) 提供了 [梦幻框架](../framework/) 、[梦幻应用](../app/) 相关教程 以及 [梦幻社区](../forum/) 相关规章制度。
+本文档项目为 [梦幻社区](http://drea.cc) 提供了 [梦幻框架](http://drea.cc/docs/framework/) 、[梦幻应用](http://drea.cc/docs/app/) 相关教程 以及梦幻社区相关[规章制度](http://drea.cc/docs/forum/)
 
 文档内容过多，现邀请大家一起维护，共同构建梦幻社区，此文档项目完全开源，也欢迎大家学习借鉴！
 
