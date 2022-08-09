@@ -1,0 +1,150 @@
+:root {
+    // brand colors
+    --c-brand: #ff5b73;
+    --c-brand-light: #fc6e83;
+
+    // background colors
+    --c-bg: #ffffff;
+    --c-bg-light: #f3f4f5;
+    --c-bg-lighter: #eeeeee;
+    --c-bg-navbar: #fefefe;
+    --c-bg-sidebar: #fefefe;
+    --c-bg-arrow: #cccccc;
+
+    // text colors
+    --c-text: #2c3e50;
+    --c-text-accent: var(--c-brand);
+    --c-text-light: #3a5169;
+    --c-text-lighter: #4e6e8e;
+    --c-text-lightest: #6a8bad;
+    --c-text-quote: #999999;
+
+    // border colors
+    --c-border: #ff5b73;
+    --c-border-dark: #EFEFEF;
+
+    // custom container colors
+    --c-tip: #ff5b73;
+    // layout vars
+    --content-width: 1250px;
+}
+
+.navbar,
+.sidebar {
+    box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
+}
+
+.navbar {
+    border-bottom: none;
+}
+
+.sidebar {
+    border-right: none;
+}
+
+h2 {
+    border-bottom: none;
+}
+
+.custom-container-title {
+    display: none;
+}
+
+table {
+    display: table;
+    width: 100%;
+    border: 1px solid var(--c-border-dark);
+    border-top: none;
+    text-align: left;
+    font-size: 14px;
+}
+
+th,
+td {
+    padding: 0.6em 1em;
+    border: none;
+    transition: border-color var(--t-color);
+    max-width: 300px;
+}
+
+th {
+    background: #f2f2f2;
+}
+
+.sidebar-item.sidebar-heading,
+table,
+.page .theme-default-content {
+    color: #444;
+}
+
+h1,
+h2,
+h3 {
+    color: black;
+}
+
+h4 {
+    color: #333;
+}
+
+
+//暗黑模式
+html.dark {
+    // brand colors
+    --c-brand: #ff5b73;
+    --c-brand-light: #fc6e83;
+
+    // background colors
+    --c-bg: #36393f;
+    --c-bg-light: #2F3136;
+    --c-bg-lighter: #18191c;
+    --c-bg-navbar: #2F3136;
+    --c-bg-sidebar: #2F3136;
+
+    // text colors
+    --c-text: #b9bbbe;
+    --c-text-light: #dcddde;
+    --c-text-lighter: #8b9eb0;
+    --c-text-lightest: #8094a8;
+
+    // border colors
+    --c-border: #3e4c5a;
+    --c-border-dark: #34404c;
+
+    // custom container colors
+    --c-tip: #ff5b73;
+    --code-bg-color: #18191c;
+}
+
+html.dark {
+
+    .sidebar-item.sidebar-heading,
+    table,
+    .page .theme-default-content {
+        color: #dcddde;
+    }
+
+    h1,
+    h2,
+    h3 {
+        color: white;
+    }
+
+    h4 {
+        color: #e3e5e8;
+    }
+
+    th {
+        background: #202225;
+        border-bottom: 1px solid #040405;
+    }
+
+    tr {
+        background: #18191c;
+        border: 1px solid transparent;
+    }
+
+    tr:nth-child(2n) {
+        background: #121315;
+    }
+}
