@@ -1,0 +1,21 @@
+{
+    "name": "drea.open.docs",
+    "version": "1.0.0",
+    "description": "drea.open.docs",
+    "main": "index.js",
+    "scripts": {
+        "test": "npm run unit && npm run e2e",
+        "dev": "vuepress dev docs",
+        "build": "vuepress build docs"
+    },
+    "keywords": [
+        "drea.open.docs"
+    ],
+    "author": "Rhyheart",
+    "license": "ISC",
+    "devDependencies": {
+        "vuepress": "^2.0.0-beta.49",
+        "@vuepress/plugin-docsearch": "^2.0.0-beta.49",
+        "vuepress-plugin-clipboard": "^2.1.3"
+    }
+}
