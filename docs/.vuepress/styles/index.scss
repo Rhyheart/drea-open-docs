@@ -20,18 +20,28 @@
     --c-text-quote: #999999;
 
     // border colors
-    --c-border: #ff5b73;
+    --c-border: #eaecef;
     --c-border-dark: #EFEFEF;
 
     // custom container colors
     --c-tip: #ff5b73;
     // layout vars
-    --content-width: 1250px;
+    --content-width: 78.125rem;
+    --sidebar-width: 18rem
 }
 
 .navbar,
 .sidebar {
-    box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
+    box-shadow: 0 0.125rem 0.625rem rgb(0 0 0 / 10%);
+}
+
+.router-link-active.active {
+    background: rgba(0, 0, 0, 0.06);
+}
+
+.sidebar-item.active:not(p.sidebar-heading) {
+    border: none;
+    border-radius: 0.25rem;
 }
 
 .navbar {
@@ -39,7 +49,11 @@
 }
 
 .sidebar {
+    padding: 0 1.25rem;
     border-right: none;
+    li {
+        padding: 0.1875rem 0;
+    }
 }
 
 h2 {
@@ -53,10 +67,10 @@ h2 {
 table {
     display: table;
     width: 100%;
-    border: 1px solid var(--c-border-dark);
+    border: 0.0625rem solid var(--c-border-dark);
     border-top: none;
     text-align: left;
-    font-size: 14px;
+    font-size: 0.874rem;
 }
 
 th,
@@ -64,7 +78,7 @@ td {
     padding: 0.6em 1em;
     border: none;
     transition: border-color var(--t-color);
-    max-width: 300px;
+    max-width: 18.7rem;
 }
 
 th {
@@ -118,6 +132,9 @@ html.dark {
 
 html.dark {
 
+    .router-link-active.active {
+        background: rgba(255, 255, 255, 0.06);
+    }
     .sidebar-item.sidebar-heading,
     table,
     .page .theme-default-content {
@@ -136,12 +153,12 @@ html.dark {
 
     th {
         background: #202225;
-        border-bottom: 1px solid #040405;
+        border-bottom: 0.0625rem solid #040405;
     }
 
     tr {
         background: #18191c;
-        border: 1px solid transparent;
+        border: 0.0625rem solid transparent;
     }
 
     tr:nth-child(2n) {
