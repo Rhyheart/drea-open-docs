@@ -122,7 +122,7 @@ export default defineUserConfig({
             {
               text: '文档',
               children: [
-                '/guide/readme.md'
+                '/start/readme.md'
               ],
             },
             {

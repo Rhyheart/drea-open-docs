@@ -10,7 +10,7 @@
 
 ### 2、安装应用
 
-**安装 至 梦幻框架**
+**安装 至 [梦幻框架](../framework/)**
 
 [GIF教程](https://res.drea.cc/img/drea/framework/ui/演示/安装应用.gif) 将“app”内应用拖拽至框架应用区，即可完成应用的安装
 

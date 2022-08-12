@@ -5,14 +5,14 @@
 
 ### 服务器篇
 
-#### 视频
-
-[《梦幻教程》如何创建机器人？ 服务器篇](https://www.bilibili.com/video/BV1bY4y1x7w3?p=1)
-
 #### 资源
 
 - [腾讯云](https://cloud.tencent.com/act)
 - [阿里云](https://www.aliyun.com/activity)
+
+#### 视频
+
+[《梦幻教程》如何创建机器人？ 服务器篇](https://www.bilibili.com/video/BV1bY4y1x7w3?p=1)
 
 #### 步骤
 
@@ -31,14 +31,14 @@
 
 ### 通用篇
 
-#### 视频
-
-[《梦幻教程》如何创建机器人？ 通用篇](https://www.bilibili.com/video/BV1bY4y1x7w3?p=2)
-
 #### 资源
 
 - [梦幻框架](https://open.drea.cc/51)
 - [梦幻应用](https://open.drea.cc/6)
+
+#### 视频
+
+[《梦幻教程》如何创建机器人？ 通用篇](https://www.bilibili.com/video/BV1bY4y1x7w3?p=2)
 
 #### 步骤
 
@@ -57,13 +57,13 @@
 
 ### QQ篇
 
-#### 视频
-
-[《梦幻教程》如何创建机器人？ QQ篇](https://www.bilibili.com/video/BV1bY4y1x7w3?p=3)
-
 #### 资源
 
 - [官网](https://im.qq.com/)
+
+#### 视频
+
+[《梦幻教程》如何创建机器人？ QQ篇](https://www.bilibili.com/video/BV1bY4y1x7w3?p=3)
 
 #### 步骤
 
@@ -128,16 +128,16 @@
 
 ### Q频篇
 
-#### 视频
-
-[《梦幻教程》如何创建机器人？ Q频篇](https://www.bilibili.com/video/BV1bY4y1x7w3?p=4)
-
 #### 资源
 
 - [官网](https://im.qq.com/index)
 - [QQ开放平台文档](https://bot.q.qq.com/wiki)
 - [QQ开放平台后台](https://q.qq.com)
 - [梦幻机器人-自测报告](https://open.drea.cc/101)
+
+#### 视频
+
+[《梦幻教程》如何创建机器人？ Q频篇](https://www.bilibili.com/video/BV1bY4y1x7w3?p=4)
 
 #### 步骤
 
@@ -178,15 +178,15 @@
 
 ### DoDo篇
 
-#### 视频
-
-[《梦幻教程》如何创建机器人？ DoDo篇](https://www.bilibili.com/video/BV1bY4y1x7w3?p=5)
-
 #### 资源
 
 - [官网](https://www.imdodo.com)
 - [DoDo开放平台文档](https://open.imdodo.com)
 - [DoDo开放平台后台](https://doker.imdodo.com)
+
+#### 视频
+
+[《梦幻教程》如何创建机器人？ DoDo篇](https://www.bilibili.com/video/BV1bY4y1x7w3?p=5)
 
 #### 步骤
 
@@ -219,15 +219,15 @@
 
 ## 开发机器人
 
-#### 视频
-
-[《梦幻教程》如何开发机器人应用？ ](https://www.bilibili.com/video/BV1bY4y1x7w3?p=6)
-
 #### 资源
 
 - [方法文档](./method.md)
 - [易语言IDE](https://open.drea.cc/102)
 - [梦幻框架SDK](https://open.drea.cc/56)
+
+#### 视频
+
+[《梦幻教程》如何开发机器人应用？ ](https://www.bilibili.com/video/BV1bY4y1x7w3?p=6)
 
 #### 步骤
 
