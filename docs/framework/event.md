@@ -2,17 +2,17 @@
 
 ## 应用初始化
 
-#### 事件方法
+#### 方法名称
 
 |方法|是否公开|说明|
 |:---------------|:----|:---------------|
 |Init|是||
 
-#### 事件参数
+#### 方法参数
 
 无
 
-#### 事件返回
+#### 方法返回
 
 首先，我们拼接好应用信息JSON，如下示例：
 
@@ -24,21 +24,14 @@
     "ver": "6.0.0",
     "author": "Rhyheart",
     "desc": "这是一款测试应用！",
-    "authList": ["1001", "1002", "2001", "4001", "4002", "101", "201"],
-    "AppLoad": 1,
-    "AppExit": 2,
-    "AppWindow": 3,
-    "PersonalMessageEvent": 4,
-    "PersonalAddEvent": 5,
-    "ChannelMessageEvent": 6,
-    "MemberJoinEvent": 7,
-    "MemberLeaveEvent": 8,
+    "authList": ["AppLoad", "AppExit", "AppWindow", "PersonalMessageEvent", "ChannelMessageEvent"],
+    "AppEvent": 12345
 }
 ```
 
 然后我们调用[置应用签名](./method.md#置应用签名)方法对应用信息JSON进行签名，最后返回签名后的文本值即可！
 
-#### JSON说明
+#### 参数说明
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
@@ -48,107 +41,129 @@
 |ver|string|应用版本|
 |author|string|应用作者|
 |desc|string|应用描述|
-|authList|`list<string>`|[权限码](./const.md#权限码)列表|
-|AppLoad|int|应用载入，传入处理函数指针|
-|AppExit|int|应用退出，传入处理函数指针|
-|AppWindow|int|应用窗口，传入处理函数指针|
-|PersonalMessageEvent|int|个人消息事件，传入处理函数指针|
-|PersonalAddEvent|int|个人添加事件，传入处理函数指针|
-|ChannelMessageEvent|int|频道消息事件，传入处理函数指针|
-|MemberJoinEvent|int|成员加入事件，传入处理函数指针|
-|MemberLeaveEvent|int|成员退出事件，传入处理函数指针|
+|authList|`list<string>`|权限列表，设置了指定[权限](./const.md#事件类型)才会接收到指定[事件](#事件内容)|
+|AppEvent|int|应用事件，传入处理函数指针|
 
-## 应用载入
+## 应用事件
 
-#### 事件方法
+#### 方法名称
 
 |方法|是否公开|说明|
 |:---------------|:----|:---------------|
-|AppLoad|否||
+|AppEvent|是|应用事件|
 
-#### 事件参数
+#### 方法参数
 
-无
+|字段|类型|是否必传|说明|
+|:---------------|:-----|:-----|:---------------|
+|message|string|是|事件内容，为JSON文本，其中`event`字段代表[事件类型](./const.md#事件类型)，不同事件，[事件内容](#事件内容)也不相同|
 
-#### 事件返回
+#### 方法返回
 
-无
-
-
-## 应用退出
-
-#### 事件方法
-
-|方法|是否公开|说明|
-|:---------------|:----|:---------------|
-|AppExit|否||
-
-#### 事件参数
-
-无
-
-#### 事件返回
-
-无
+[消息返回](./const.md#消息返回)
 
 
-## 应用窗口
+## 事件内容
 
-#### 事件方法
+### 应用载入
 
-|方法|是否公开|说明|
-|:---------------|:----|:---------------|
-|AppWindow|否||
-
-#### 事件参数
-
-无
-
-#### 事件返回
-
-无
-
-
-## 个人消息事件
-
-|方法|是否公开|说明|
-|:---------------|:----|:---------------|
-|PersonalMessageEvent|否||
-
-#### 事件参数
+#### 参数
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
+|event|string|事件，固定为`AppLoad`|
+
+#### 示例
+
+``` json
+{
+    "event": "AppLoad"
+}
+```
+
+### 应用退出
+
+#### 参数
+
+|字段|类型|说明|
+|:---------------|:-----|:---------------|
+|event|string|事件，固定为`AppExit`|
+
+#### 示例
+
+``` json
+{
+    "event": "AppExit"
+}
+```
+
+
+### 应用窗口
+
+#### 参数
+
+|字段|类型|说明|
+|:---------------|:-----|:---------------|
+|event|string|事件，固定为`AppWindow`|
+
+#### 示例
+
+``` json
+{
+    "event": "AppWindow"
+}
+```
+
+
+### 个人消息事件
+
+#### 参数
+
+|字段|类型|说明|
+|:---------------|:-----|:---------------|
+|event|string|事件，固定为`PersonalMessageEvent`|
 |islandId|string|群号|
 |userId|string|用户号|
 |messageId|string|消息ID|
 |messageBody|string|消息内容|
 
-#### 事件返回
+#### 示例
 
-[消息返回](./const.md#消息返回)
+``` json
+{
+    "event": "PersonalMessageEvent",
+    "islandId": "100000",
+    "userId": "12345",
+    "messageId": "1234567890",
+    "messageBody": "消息内容"
+}
+```
 
 
-## 个人添加事件
+### 个人添加事件
 
-|方法|是否公开|说明|
-|:---------------|:----|:---------------|
-|PersonalAddEvent|否||
-
-#### 事件参数
+#### 参数
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
+|event|string|事件，固定为`PersonalAddEvent`|
 |userId|string|用户号|
 |applyId|string|申请标识|
 |applyReason|string|申请理由|
 
-#### 事件返回
+#### 示例
 
-[消息返回](./const.md#消息返回)
+``` json
+{
+    "event": "PersonalAddEvent",
+    "userId": "12345",
+    "applyId": "1234567890",
+    "applyReason": "申请理由"
+}
+```
 
 
-## 频道消息事件
+### 频道消息事件
 
 :::tip
 由于适配了多平台，因此此事件进行了抽象
@@ -160,34 +175,38 @@
 对于Q频，群 即 QQ频道，频道 即 QQ子频道
 :::
 
-|方法|是否公开|说明|
-|:---------------|:----|:---------------|
-|ChannelMessageEvent|否||
-
-#### 事件参数
+#### 参数
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
+|event|string|事件，固定为`ChannelMessageEvent`|
 |islandId|string|群号|
 |channelId|string|频道号|
 |userId|string|用户号|
 |messageId|string|消息ID|
 |messageBody|string|消息内容|
 
-#### 事件返回
+#### 示例
 
-[消息返回](./const.md#消息返回)
+``` json
+{
+    "event": "ChannelMessageEvent",
+    "islandId": "100000",
+    "channelId": "10000010",
+    "userId": "12345",
+    "messageId": "1234567890",
+    "messageBody": "消息内容"
+}
+```
 
-## 成员加入事件
 
-|方法|是否公开|说明|
-|:---------------|:----|:---------------|
-|MemberJoinEvent|否||
+### 成员加入事件
 
-#### 事件参数
+#### 参数
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
+|event|string|事件，固定为`MemberJoinEvent`|
 |subEvent|int|[子事件](./const.md#子事件)|
 |islandId|string|群号|
 |userId|string|用户号|
@@ -196,27 +215,44 @@
 |operateUserId|string|操作用户号|
 |operateReason|string|操作理由|
 
-#### 事件返回
+#### 示例
 
-[消息返回](./const.md#消息返回)
+``` json
+{
+    "event": "MemberJoinEvent",
+    "subEvent": 11,
+    "islandId": "100000",
+    "userId": "12345",
+    "applyId": "1234567890",
+    "applyReason": "申请理由",
+    "operateUserId": "54321",
+    "operateReason": "操作理由"
+}
+```
 
 
-## 成员退出事件
+### 成员退出事件
 
-|方法|是否公开|说明|
-|:---------------|:----|:---------------|
-|MemberLeaveEvent|否||
-
-#### 事件参数
+#### 参数
 
 |字段|类型|说明|
 |:---------------|:-----|:---------------|
+|event|string|事件，固定为`MemberLeaveEvent`|
 |subEvent|int|[子事件](./const.md#子事件)|
 |islandId|string|群号|
 |userId|string|用户号|
 |operateUserId|string|操作用户号|
 |operateReason|string|操作理由|
 
-#### 事件返回
+#### 示例
 
-[消息返回](./const.md#消息返回)
+``` json
+{
+    "event": "MemberLeaveEvent",
+    "subEvent": 22,
+    "islandId": "100000",
+    "userId": "12345",
+    "operateUserId": "54321",
+    "operateReason": "操作理由"
+}
+```

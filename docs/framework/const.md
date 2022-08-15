@@ -48,17 +48,18 @@
 |3|int|帖子|
 |4|int|其他|
 
-## 权限码
+## 事件类型
 
 |值|值类型|说明|
 |:-------|:-------|:---------------|
-|1001|string|个人消息事件|
-|1002|string|个人添加事件|
-|2001|string|频道消息事件|
-|4001|string|成员加入事件|
-|4002|string|成员退出事件|
-|101|string|置频道消息发送|
-|201|string|置个人消息发送|
+|AppLoad|string|应用载入|
+|AppExit|string|应用退出|
+|AppWindow|string|应用窗口|
+|PersonalMessageEvent|string|个人消息事件|
+|PersonalAddEvent|string|个人添加事件|
+|ChannelMessageEvent|string|频道消息事件|
+|MemberJoinEvent|string|成员加入事件|
+|MemberLeaveEvent|string|成员退出事件|
 
 ## 申请类型
 
