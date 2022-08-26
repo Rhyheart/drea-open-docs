@@ -78,7 +78,6 @@ docs
 ├── forum/        # 社区介绍
 ├── framework/    # 框架教程
 ├── app/          # 应用教程
-├── log/          # 开放平台日志
 └── README.md     # 首页文档
 ```
 
