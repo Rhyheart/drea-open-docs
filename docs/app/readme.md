@@ -198,3 +198,9 @@ cron=0 0 0 * * *
 
 更多[cron表达式](https://www.baidu.com/s?wd=cron表达式)的定义规范请自行百度！
 
+
+## 精灵系统
+
+### 精灵图鉴
+
+[精灵图鉴](./pokemon.md)
