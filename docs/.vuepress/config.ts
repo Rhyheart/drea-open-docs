@@ -152,6 +152,7 @@ export default defineUserConfig({
               text: '梦幻应用',
               children: [
                 '/app/readme.md',
+                '/app/custom.md',
                 '/app/qa.md',
                 '/app/ui.md',
                 '/app/menu.md'

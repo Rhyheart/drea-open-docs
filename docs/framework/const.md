@@ -6,8 +6,8 @@
 |:-------|:-------|:---------------|
 |QQ|string|QQ平台|
 |DoDo|string|DoDo平台|
-|Q频|string|Q频平台|
-|Discord|string|Discord平台|
+|QC|string|Q频平台|
+|WeChat|string|微信平台|
 
 ## 消息返回
 
