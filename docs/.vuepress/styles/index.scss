@@ -30,7 +30,11 @@
     --sidebar-width: 20rem
 }
 
-a{
+div {
+    word-break: break-word;
+}
+
+a {
     padding: 0 2px;
 }
 
@@ -55,6 +59,7 @@ a{
 .sidebar {
     padding: 0 0.625rem;
     border-right: none;
+
     li {
         padding: 0.1875rem 0;
     }
@@ -139,6 +144,7 @@ html.dark {
     .router-link-active.active {
         background: rgba(255, 255, 255, 0.06);
     }
+
     .sidebar-item.sidebar-heading,
     table,
     .page .theme-default-content {
