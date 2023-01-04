@@ -6,11 +6,11 @@
 
 ## 2、提示已过试用期且尚未激活？怎么激活机器人？
 
-答：您需要加入[梦幻元宇宙](https://open.drea.cc/16)，发送“<font v-pre color=Fuchsia>激活机器人 账号</font>”指令即可<font v-pre color=Fuchsia>免费激活</font>！若遇到无法激活的情况，请及时向作者反馈！梦幻普通版应用完全并永久免费，为避免有心之人将免费应用拿去售卖，故加此限制，一次激活，永久使用！
+答：您需要加入[梦幻元宇宙](https://open.drea.cc/16)，发送“<font v-pre color=Fuchsia>激活机器人 用户号</font>”指令即可<font v-pre color=Fuchsia>免费激活</font>！在```梦幻应用配置窗口```或```梦幻框架主界面```的头像上方双击可<font v-pre color=Fuchsia>复制机器人用户号</font>。若遇到无法激活的情况，请及时向作者反馈！梦幻普通版应用完全并永久免费，为避免有心之人将免费应用拿去售卖，故加此限制，一次激活，永久使用！
 
-## 3、用户号、频道号在哪看？
+## 3、个人用户号、频道号、机器人用户号在哪看？
 
-答：发送“<font v-pre color=Fuchsia>个人信息</font>”指令可查看用户号，发送“<font v-pre color=Fuchsia>频道信息</font>”指令可查看频道号！
+答：群内发送“<font v-pre color=Fuchsia>个人信息</font>”指令可查看个人用户号，发送“<font v-pre color=Fuchsia>频道信息</font>”指令可查看频道号！在```梦幻应用配置窗口```或```梦幻框架主界面```的头像上方双击可<font v-pre color=Fuchsia>复制机器人用户号</font>！
 
 ## 4、某些平台下无法发送欢迎语之类的通知？
 
