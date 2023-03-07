@@ -12,7 +12,7 @@
 
 **安装 至 [梦幻框架](../framework/)**
 
-[GIF教程](https://res.drea.cc/img/drea/framework/ui/演示/安装应用.gif) 将“app”内应用拖拽至框架应用区，即可完成应用的安装
+[GIF教程](https://res.drea.cc/img/drea/framework/ui/演示/安装应用.gif?v=2) 将“app”内应用拖拽至框架应用区，即可完成应用的安装
 
 **安装 至 小栗子框架**
 
