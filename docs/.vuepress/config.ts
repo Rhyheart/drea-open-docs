@@ -6,6 +6,7 @@ import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 export default defineUserConfig({
   lang: 'zh-CN',
   title: 'Drea Robot',
+  port: 8099,
   description: '梦幻框架是一款基于HTTP内核，支持多协议、多账号、多平台的高效、稳定、免费的机器人框架！',
   base: '/docs/',
   head: [
