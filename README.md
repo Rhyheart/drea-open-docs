@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://drea.cc/docs">
-    <img src="https://drea.cc/docs/hero.png" width="200" height="200" alt="Rhyheart">
+  <a href="https://docs.drea.cc">
+    <img src="https://docs.drea.cc/logo-with-shadow.png" width="200" height="200" alt="Rhyheart">
   </a>
 </p>
 
@@ -22,11 +22,11 @@
 
 ## 项目介绍
 
-本文档项目服务于[梦幻社区](http://drea.cc)，对应文档站点为 <https://drea.cc/docs>，文档内容或有欠缺，诚邀各位开发者们共同参与编写补充。
+本文档项目服务于[梦幻社区](http://drea.cc)，对应文档站点为 <https://docs.drea.cc>，文档内容或有欠缺，诚邀各位开发者们共同参与编写补充。
 
 ## 云端修改
 
-对于非专业用户，打开 [梦幻文档](https://drea.cc/docs)，找到你想要的编辑的页面，然后点击页面左下角`在 GitHub 上编辑此页`链接，直接在线编辑，保存后提PR即可！
+对于非专业用户，打开 [梦幻文档](https://docs.drea.cc)，找到你想要的编辑的页面，然后点击页面左下角`在 GitHub 上编辑此页`链接，直接在线编辑，保存后提PR即可！
 
 ## 本地修改
 
